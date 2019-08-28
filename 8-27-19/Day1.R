@@ -1,5 +1,12 @@
-#First day of tidyR
+# First day of tidyR
+# Demetra Panos
+# 8/27/19
 
-###mkdir to make a new folder, also don't forget no /
 
-a <- rnorm(n = 100, mean = 10, sd = 2)
+## load library ##
+
+library("tidyverse")
+
+## read data ##
+simpsons <- readr::read_delim("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-08-27/simpsons-guests.csv", delim = "|", quote = "")
+
